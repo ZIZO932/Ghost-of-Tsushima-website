@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ghost of Tsushima</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+  <nav class="bg-black bg-opacity-80 text-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Ghost of Tsushima</h1>
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">&#9776;</button>
+      <ul id="menu" class="hidden md:flex gap-6 font-medium">
+        <li><a href="#home" class="hover:text-red-500">Home</a></li>
+        <li><a href="#features" class="hover:text-red-500">Legends</a></li>
+        <li><a href="#menu-section" class="hover:text-red-500">Gear</a></li>
+        <li><a href="#reviews" class="hover:text-red-500">Tales</a></li>
+        <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+      <ul class="flex flex-col gap-3 font-medium">
+        <li><a href="#home" class="hover:text-red-500">Home</a></li>
+        <li><a href="#features" class="hover:text-red-500">Legends</a></li>
+        <li><a href="#menu-section" class="hover:text-red-500">Gear</a></li>
+        <li><a href="#reviews" class="hover:text-red-500">Tales</a></li>
+        <li><a href="#contact" class="hover:text-red-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="text-center py-20 bg-gradient-to-b from-black to-gray-800 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Rise of the Ghost</h2>
+      <p class="text-xl sm:text-2xl italic mb-6">“Honor died on the beach. The Ghost was born.”</p>
+      <a href="#menu-section" class="bg-red-600 text-white px-6 py-3 rounded-full font-bold hover:bg-red-700">View Gear</a>
+    </div>
+  </section>
+
+  <section id="features" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl text-center font-bold mb-10 text-red-500">The Ghost</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 border border-gray-600 rounded-lg hover:shadow-lg hover:border-red-500">
+          <h4 class="text-xl font-bold mb-2 text-red-400">Silent Assassin</h4>
+          <p>Master the art of stealth to strike from the shadows.</p>
+        </div>
+        <div class="p-6 border border-gray-600 rounded-lg hover:shadow-lg hover:border-red-500">
+          <h4 class="text-xl font-bold mb-2 text-red-400">Samurai's Honor</h4>
+          <p>Face foes head-on with precise swordsmanship and courage.</p>
+        </div>
+        <div class="p-6 border border-gray-600 rounded-lg hover:shadow-lg hover:border-red-500">
+          <h4 class="text-xl font-bold mb-2 text-red-400">Ride With Purpose</h4>
+          <p>Explore the breathtaking landscapes of Tsushima on horseback.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu-section" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl text-center font-bold mb-10 text-red-500">Ghost's equipments</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+          <img src="s1.jpg" alt="Katana" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-red-400">Sakai Katana</h4>
+         
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+          <img src="s2.jpeg" alt="Ghost Armor" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-red-400">Ghost Armor</h4>
+        
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md overflow-hidden">
+          <img src="s3.jpeg" alt="Smoke Bomb" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h4 class="text-xl font-bold text-red-400">Smoke Bomb</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-16 bg-gray-800">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl text-center font-bold mb-10 text-red-500">Tales of the Island</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+          <p class="mb-4">“An emotional journey of honor and sacrifice. I became the Ghost.”</p>
+          <span class="text-red-400 font-semibold">- Yuna, Survivor</span>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700">
+          <p class="mb-4">“Breathtaking visuals and an unforgettable story. A true masterpiece.”</p>
+          <span class="text-red-400 font-semibold">- Kenji, Merchant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="bg-black text-white text-center py-8">
+    <div class="container mx-auto px-6">
+      <p class="text-lg font-semibold">© 2025 Ghost of Tsushima Tribute. All rights reserved.</p>
+      <p class="italic mt-2 text-red-400">“Become what they fear. Become the Ghost.”</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
